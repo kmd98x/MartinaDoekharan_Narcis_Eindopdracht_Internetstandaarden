@@ -1,16 +1,16 @@
 @font-face {
     font-family: "tangerine";
-    src: url("../fonts/Tangerine/Tangerine-Bold.ttf");
+    src: url("../fonts/tangerine/tangerine-bold.ttf");
 }
 
 @font-face {
     font-family: "cinzel";
-    src: url("../fonts/Cinzel/Cinzel-VariableFont_wght.ttf");
+    src: url("../fonts/cinzel/cinzel-variablefont_wght.ttf");
 }
 
 @font-face {
     font-family: "cormorant";
-    src: url("../fonts/Cormorant_Garamond/CormorantGaramond-Medium.ttf");
+    src: url("../fonts/cormorant_garamond/cormorantgaramond-medium.ttf");
 }
 
 /* Hele website body kleur geven */
@@ -40,7 +40,7 @@ h1 {
     color: gold;
     text-align: center;
     animation: h1animation 4s ease-in-out;
-    font-family: tangerine;
+    font-family: "tangerine";
     font-size: 5em;
 }
 
