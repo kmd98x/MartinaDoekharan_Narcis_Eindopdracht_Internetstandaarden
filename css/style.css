@@ -24,6 +24,32 @@ body {
 h2, h3, p, label, li, li a, section a, footer, button{
     font-family: "cormorant";
 }
+
+/* Class button is toegevoegd, zodat ik niet steeds dezelfde code hoef te herhalen */
+.button img {
+    width: 1.5em;
+    padding-left: 1em;
+}
+
+.button{
+    margin-top: 1.3em;
+    animation-delay: 1.5s;
+    color: #f5f5db;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.1em gold;
+    width: 11em;
+    padding: 0.5em;
+    transition: 0.4s;
+}
+
+.button:hover {
+    text-shadow: 0em 0em 1em white;
+    box-shadow: 0em 0em 1em rgba(255, 217, 0, 0.664);
+}
+
 /* Hele website bij elke pagina een fade geven als je erop komt */
 @keyframes fadepage {
     0% {
@@ -333,31 +359,6 @@ ELIE SAAB PAGINA STYLES
     animation-delay: 1.2s;
 }
 
-/* koop deze knop eliesaab */
-.elie-saab main section a img {
-    width: 1.5em;
-    padding-left: 1em;
-}
-
-.elie-saab main section a {
-    margin-top: 1.3em;
-    animation-delay: 1.5s;
-    color: #f5f5db;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 0.1em gold;
-    width: 11em;
-    padding: 0.5em;
-    transition: 0.4s;
-}
-
-.elie-saab main section a:hover {
-    text-shadow: 0em 0em 1em white;
-    box-shadow: 0em 0em 1em rgba(255, 217, 0, 0.664);
-}
-
 /* instagram volgen elie saab */
 .elie-saab footer a {
     margin: auto;
@@ -432,30 +433,7 @@ MONTALE PAGINA STYLES
     animation-delay: 1.6s;
 }
 
-/* shopping bag icon bewerken */
-.montale main a img {
-    width: 1.5em;
-    padding-left: 1em;
-}
-
-/* Geen echte button, maar wou het een go to actie geven. Button bewerkingen van het  koop deze buton */
-.montale main a {
-    animation-delay: 1.5s;
-    color: #f5f5db;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 0.1em gold;
-    width: 8em;
-    padding: 0.5em;
-    transition: 0.4s;
-}
-
-.montale main a:hover {
-    text-shadow: 0em 0em 1em white;
-    box-shadow: 0em 0em 1em rgba(255, 217, 0, 0.664)
-}
+/* Geen echte button, maar wou het een go to actie geven. Button bewerkingen van het koop deze buton is helemaal boven */
 
 
 /* instagram logo montale */
@@ -505,31 +483,7 @@ TRUSSARDI PAGINA STYLES
     max-width: 40em;
 }
 
-
-.trussardi main >ul li a img {
-    width: 1.5em;
-    padding-left: 1em;
-}
-
-/* geen echte button, maar wou het een go to actie geven.button bewerkingen van het  koop deze buton */
-.trussardi main > ul li a {
-    animation-delay: 1.5s;
-    color: #f5f5db;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 0.1em gold;
-    width: 11em;
-    padding: 0.5em;
-    transition: 0.4s;
-    margin: auto;
-}
-
-.trussardi main > ul li a:hover {
-    text-shadow: 0em 0em 1em white;
-    box-shadow: 0em 0em 1em rgba(255, 217, 0, 0.664);
-}
+/* geen echte button, maar wou het een go to actie geven. Button bewerkingen van het  koop deze buton is helemaal boven */
 
 /* Mijn aside stijlen */
 .trussardi aside ul{
