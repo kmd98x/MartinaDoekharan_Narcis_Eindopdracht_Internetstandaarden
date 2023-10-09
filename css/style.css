@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "tangerine";
+    src: url("../fonts/Tangerine/Tangerine-Bold.ttf");
+}
+
+@font-face {
+    font-family: "cinzel";
+    src: url("../fonts/Cinzel/Cinzel-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "cormorant";
+    src: url("../fonts/Cormorant_Garamond/CormorantGaramond-Medium.ttf");
+}
+
 /* Hele website body kleur geven */
 body {
     color: #f5f5db;
@@ -6,6 +21,9 @@ body {
     animation: fadepage 5s;
 }
 
+h2, h3, p, label, li, li a, section a, footer, button{
+    font-family: "cormorant";
+}
 /* Hele website bij elke pagina een fade geven als je erop komt */
 @keyframes fadepage {
     0% {
@@ -22,17 +40,19 @@ h1 {
     color: gold;
     text-align: center;
     animation: h1animation 4s ease-in-out;
+    font-family: tangerine;
+    font-size: 5em;
 }
 
 @keyframes h1animation {
     0% {
         color: #f5f5db;
-        font-size: 3.5em;
+        font-size: 7em;
     }
 
     100% {
         color: gold;
-        font-size: 2em;
+        font-size: 5em;
     }
 }
 
@@ -51,6 +71,7 @@ nav ul {
 }
 
 nav ul li a {
+    font-family: "cinzel";
     text-transform: uppercase;
     text-decoration: none;
     color: gold;
@@ -205,10 +226,11 @@ form input:focus {
 }
 
 button {
+    font-size: 1em;
     color: gold;
     border: gold solid 0.1em;
     background-color: transparent;
-    padding: 0.8em 2em;
+    padding: 0.4em 1.5em;
 }
 
 button:active {
@@ -526,11 +548,15 @@ TRUSSARDI PAGINA STYLES
     list-style: none;
     width: 15em;
     border: solid 0.1em gold;
+    transition: 0.8s;
 }
 
+/* Om mijn aside groter te laten worden als je erover hovert */
 .trussardi aside ul li:hover{
     box-shadow: 0em 0em 1em gold;
+    transform: scale(1.04);
 }
+
 
 .trussardi aside a{
     color: #f5f5db;
@@ -574,9 +600,18 @@ BRONNEN PAGINA STYLES
     max-width: 60em;
 }
 
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius */
 .bronnen main section {
-    border: solid .1em white;
-    margin-bottom: 1em;
+    border: solid .1em #f5f5db;
+    margin-bottom: 5em;
+    padding: 1em;
+    transition: 1.4s;
+    border-radius: 1em;
+}
+
+.bronnen main section:hover{
+    box-shadow: 0em 0em 1em gold;
+    border: solid .1em rgba(255, 217, 0, 0.664);
 }
 
 /* Selecteer alle a'tjes van de main */
