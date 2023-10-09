@@ -1,16 +1,16 @@
 @font-face {
     font-family: "tangerine";
-    src: url("../fonts/tangerine/tangerine-bold.ttf");
+    src: url("../fonts1/Tangerine/Tangerine-Bold.ttf");
 }
 
 @font-face {
     font-family: "cinzel";
-    src: url("../fonts/cinzel/cinzel-variablefont_wght.ttf");
+    src: url("../fonts1/Cinzel/Cinzel-VariableFont_wght.ttf");
 }
 
 @font-face {
     font-family: "cormorant";
-    src: url("../fonts/cormorant_garamond/cormorantgaramond-medium.ttf");
+    src: url("../fonts1/Cormorant_Garamond/CormorantGaramond-Medium.ttf");
 }
 
 /* Hele website body kleur geven */
