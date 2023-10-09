@@ -12,12 +12,16 @@
     <header>
 
         <h1>Favoriete geurtjes</h1>
-<!-- een div omdat ik geen section zonder een h kan maken -->
+<!-- Er was hier eerst een div, omdat ik geen section zonder een h kan maken, maar door Jeffrey veranderd naar een list. Update: Toch een div gebruiken, omdat anders mijn nav balk de effecten ook krijg, dus ik moet een optie vinden om de effecten apart te houden.  -->
+    
         <div>
-            <img src="fotos/eliesaab.png" alt="Elie Saab parfum">
-            <img src="fotos/montalee.png" alt="Montale parfum">
-            <img src="fotos/trassardi.png" alt="Trussardi parfum">
+            <ul>
+                <li><img src="fotos/eliesaab.png" alt="Elie Saab parfum"></li>
+                <li><img src="fotos/montalee.png" alt="Montale parfum"></li>
+                <li><img src="fotos/trassardi.png" alt="Trussardi parfum"></li>
+            </ul>
         </div>
+        
 
         <nav>
             <ul>
@@ -59,7 +63,7 @@
         <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form -->
         <form>
             <label for="vraag">Vragen?</label>
-            <input type="text">
+            <input required type="text">
             <button>
                 Verstuur
             </button>

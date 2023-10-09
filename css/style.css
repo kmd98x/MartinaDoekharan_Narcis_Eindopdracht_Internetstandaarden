@@ -1,4 +1,4 @@
-/* heel website body kleur geven */
+/* Hele website body kleur geven */
 body {
     color: #f5f5db;
     background: rgb(0, 0, 0);
@@ -6,7 +6,7 @@ body {
     animation: fadepage 5s;
 }
 
-/* hele website bij elke pagina een fade geven als je erop komt */
+/* Hele website bij elke pagina een fade geven als je erop komt */
 @keyframes fadepage {
     0% {
         opacity: 0;
@@ -36,7 +36,7 @@ h1 {
     }
 }
 
-/* navigatie balk goed ordenen */
+/* navigatie balk goed ordenen en effects geven */
 nav {
     margin-top: 1em;
 }
@@ -63,8 +63,8 @@ nav ul li a:hover {
     animation: glow 1s ease-in-out infinite alternate;
 }
 
-/* text in mijn nav een glow geven */
-/* https://www.w3schools.com/howto/howto_css_glowing_text.asp */
+/* Text in mijn nav een glow geven */
+/* Bron : https://www.w3schools.com/howto/howto_css_glowing_text.asp */
 @keyframes glow {
     0% {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #3438a6, 0 0 40px #3438a6, 0 0 50px #3438a6, 0 0 60px #3438a6, 0 0 70px#3438a6;
@@ -76,38 +76,46 @@ nav ul li a:hover {
 }
 
 /* https://css-tricks.com/a-handy-little-system-for-animated-entrances-in-css/ */
-/* mijn header is een component want hij wordt op meerdere pagina's gebruikt met dezelfde styling */
+/* Mijn header is een component, want hij wordt op meerdere pagina's gebruikt met dezelfde styling */
 
-header div {
+/* Ik had eerst gebruik gemaakt van een div, maar Jeffrey heeft elke keer als tip gegeven dat ik een list moet gebruiken als ik bv een paar fotos heb. Dus ipv ul stond er eerst div */
+header div ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    list-style: none;
 }
 
-/* de 3 fotos laten animeren */
-header div img {
+/* De 3 fotos een size geven */
+header div ul img {
     width: 12em;
+}
+
+/* De animatie van de 3 fotos en bij elke li stond eerst img. Update: weer div gebruikt.*/
+header div ul li{
     animation: fotoanimation 3s;
     animation-fill-mode: backwards;
+    /* Deze property hierboven heb ik gebruik zodat de animatie op de juiste manier moet werken. */
 }
 
-header div img:nth-of-type(1) {
+/* Ipv de li(102-113), stond er eerst img, dus toen de div er nog was */
+header div ul li:nth-of-type(1) {
     margin-right: -2em;
     animation-delay: 0.5s;
-
 }
 
-header div img:nth-of-type(3) {
-    margin-left: -2em;
-    animation-delay: 1.5s;
-}
-
-header div img:nth-of-type(2) {
-    /* +2 omdat het voor de 2 andere moet komen */
+header div ul li:nth-of-type(2) {
+    /* +1 omdat het voor de 2 andere moet komen */
     z-index: 1;
     margin-right: -2em;
     animation-delay: 2.5s;
 }
+
+header div ul li:nth-of-type(3) {
+    margin-left: -2em;
+    animation-delay: 1.5s;
+}
+
 
 @keyframes fotoanimation {
     0% {
@@ -121,10 +129,7 @@ header div img:nth-of-type(2) {
     }
 }
 
-header section img:hover {
-    scale: (1.2);
-}
-
+/* De main(section) gecentreerd en een breedte gegeven. */
 main {
     max-width: 80em;
     margin: 3em auto 4em;
@@ -163,7 +168,7 @@ HOME PAGINA STYLES
     transform: scale(1.1);
 }
 
-/* mijn footer is ook een component */
+/* Mijn footer is ook een component */
 footer {
     max-width: 80em;
     margin: auto;
@@ -223,12 +228,13 @@ ELIE SAAB PAGINA STYLES
     height: 35em;
     width: 23em;
 
-    /* dit is de parent en houdt de afbeeldingen in de container/zn plek (ul) */
+    /* Dit is de parent en houdt de afbeeldingen in de container/zn plek (ul) */
     position: relative;
+    /* Stel ik had absolute, dan gaat de text op de slideshow. Of buiten de parent. */
     margin: auto;
     padding: 0;
 
-    /* alles wat buiten de container valt, niet laten weergeven. Als je het niet deed, kwam het onder de text*/
+    /* Alles wat buiten de container valt, niet laten weergeven. Als je het niet deed, kwam het onder de text*/
     overflow: hidden;
 }
 
@@ -356,17 +362,26 @@ MONTALE PAGINA STYLES
 ===================================
 */
 
+/* Geeft de main een breedte */
 .montale main {
     max-width: 45em;
 }
 
-/* ruimte tussen de parfum fotos,dus tussen de section */
-.montale main section {
-    margin-bottom: 3em;
+/* Ruimte tussen de parfum fotos,dus tussen de section */
+.montale main ul {
+    list-style: none;
 }
 
-/* de 3 parfums een grootte geven en animation */
-.montale main section>img {
+/* Direct child. section is een kind van section en maakt kolommen zodat het naast elkaar komt*/
+.montale main ul li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+/* De 3 parfums een grootte geven en animation. Met de > selecteer ik de directe child. De shopping bag is ook een img, dus daarom direct child, anders zou de shopping bag ook soort van zweven en dat willen we niet. */
+.montale main ul li > img {
     max-width: 13em;
     animation: zweefparfum 3s infinite;
     animation-delay: 0.5;
@@ -386,13 +401,40 @@ MONTALE PAGINA STYLES
     }
 }
 
-.montale main section:nth-of-type(2)>img {
+/* Deze 2 hieronder zorgt ervoor dat de 2 parfums niet samen bewegen zeg maar */
+.montale main ul li:nth-of-type(2)>img {
     animation-delay: 0.8s;
 }
 
-.montale main section:nth-of-type(3)>img {
+.montale main ul li:nth-of-type(3)>img {
     animation-delay: 1.6s;
 }
+
+/* shopping bag icon bewerken */
+.montale main a img {
+    width: 1.5em;
+    padding-left: 1em;
+}
+
+/* Geen echte button, maar wou het een go to actie geven. Button bewerkingen van het  koop deze buton */
+.montale main a {
+    animation-delay: 1.5s;
+    color: #f5f5db;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.1em gold;
+    width: 8em;
+    padding: 0.5em;
+    transition: 0.4s;
+}
+
+.montale main a:hover {
+    text-shadow: 0em 0em 1em white;
+    box-shadow: 0em 0em 1em rgba(255, 217, 0, 0.664)
+}
+
 
 /* instagram logo montale */
 .montale footer a {
@@ -414,14 +456,43 @@ MONTALE PAGINA STYLES
     max-width: 3em;
 }
 
-/* shopping bag icon bewerken */
-.montale section a img {
+/* 
+===================================
+TRUSSARDI PAGINA STYLES 
+===================================
+*/
+
+/* 4e pagina een breedte geven */
+.trussardi main {
+    width: 70em;
+
+}
+
+/* 1e section kolommen maken */
+.trussardi main ul {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 4em;
+    margin-top: 5em;
+    
+    /* repeat= 1e hoevaak herhalen, 2e is hoeveel kolommen */
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* 1e section alleen de fotos dus werk met nth type */
+.trussardi main li img {
+    max-width: 40em;
+}
+
+
+.trussardi main ul li a img {
     width: 1.5em;
     padding-left: 1em;
 }
 
 /* geen echte button, maar wou het een go to actie geven.button bewerkingen van het  koop deze buton */
-.montale section a {
+.trussardi main ul li a {
     animation-delay: 1.5s;
     color: #f5f5db;
     text-decoration: none;
@@ -429,28 +500,25 @@ MONTALE PAGINA STYLES
     align-items: center;
     justify-content: center;
     border: solid 0.1em gold;
-    width: 8em;
+    width: 11em;
     padding: 0.5em;
     transition: 0.4s;
+    margin: auto;
 }
 
-.montale section a:hover {
+.trussardi main ul li a:hover {
     text-shadow: 0em 0em 1em white;
-    box-shadow: 0em 0em 1em rgba(255, 217, 0, 0.664)
+    box-shadow: 0em 0em 1em rgba(255, 217, 0, 0.664);
 }
 
-/* Direct child. section is een kind van section en maakt kolommen zodat het naast elkaar komt*/
-.montale main > section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+.trussardi aside {
+    display: flex;
+    border: 0.1em solid gold;
+}
+.trussardi aside a{
+    color: #f5f5db;
 }
 
-/* 
-===================================
-TRUSSARDI PAGINA STYLES 
-===================================
-*/
 
 .trussardi footer a {
     animation-delay: 1.5s;
@@ -472,70 +540,32 @@ TRUSSARDI PAGINA STYLES
     max-width: 3em;
 }
 
-/* 4e pagina een breedte geven */
-.trussardi main {
-    width: 70em;
-}
-
-/* 1e section kolommen maken */
-.trussardi main > section {
-    align-items: center;
-    display: grid;
-    gap: 5em;
-    margin-top: 5em;
-    
-    /* repeat= 1e hoevaak herhalen, 2e is hoeveel kolommen */
-    grid-template-columns: repeat(2, 1fr);
-}
-
-/* 1e section alleen de fotos dus werk met nth type */
-.trussardi main > section:nth-of-type(1) img {
-    max-width: 40em;
-}
-
-.trussardi main > section:nth-of-type(2) img {
-    max-width: 30em;
-}
-
-.trussardi section section a img {
-    width: 1.5em;
-    padding-left: 1em;
-}
-
-/* geen echte button, maar wou het een go to actie geven.button bewerkingen van het  koop deze buton */
-.trussardi section section a {
-    animation-delay: 1.5s;
-    color: #f5f5db;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 0.1em gold;
-    width: 11em;
-    padding: 0.5em;
-    transition: 0.4s;
-    margin: auto;
-}
-
-.trussardi section section a:hover {
-    text-shadow: 0em 0em 1em white;
-    box-shadow: 0em 0em 1em rgba(255, 217, 0, 0.664);
-}
-
 /* 
 ===================================
 BRONNEN PAGINA STYLES 
 ===================================
 */
 
-.bronnen main {
-    display: grid; 
-    grid-template-columns: repeat(4, 1fr);
-    gap:2em;
+.bronnen main { 
     margin: 3em auto 0;
     max-width: 60em;
 }
 
 .bronnen main section {
     border: solid .1em white;
+    margin-bottom: 1em;
+}
+
+/* Selecteer alle a'tjes van de main */
+.bronnen main a{
+    text-decoration: none;
+    color: #f5f5db;
+}
+
+.bronnen main li{
+    line-height: 2em;
+}
+
+.bronnen main a:hover{
+    text-shadow: 0em 0em 1em white;
 }
