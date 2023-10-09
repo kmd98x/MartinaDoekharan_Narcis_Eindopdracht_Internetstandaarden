@@ -1,0 +1,149 @@
+HOME PAGE
+            
+Foto's
+    Al mijn foto's die ik van internet heb, heb ik nog in Adobe Photoshop bewerkt.
+
+    https://cdn.notinoimg.com/social/elie-saab/3423470398021_01/elie-saab-le-parfum-eau-de-parfum-voor-vrouwen___29.jpg
+    Elie Saab parfum fles
+
+    https://cdn-1.debijenkorf.nl/web_detail/montale-arabians-tonka-eau-de-parfum/?reference=048/970/0489709010100000_pro_flt_frt_01_1108_1528_5174665.jpg
+    Montale parfum fles
+
+    https://cdn.deloox.com/cdn/product/1021085/357805_500.jpg
+    Trussardi parfum fles
+
+    https://cdn.shopify.com/s/files/1/0604/5040/6651/files/Shopify-Logo_1200x628_L.jpg?v=1658337562
+    Elie Saab logo
+
+    https://cdn.freebiesupply.com/logos/large/2x/trussardi-logo-png-transparent.png
+    Trussardi logo
+
+    https://d353r0i7qv3gvw.cloudfront.net/50/2361750/stage-mobile/7040909.jpg
+    Montale logo
+
+            
+Code's
+    https://www.w3schools.com/howto/howto_css_glowing_text.asp
+    Glow effect voor mijn navigatie item
+
+    https://css-tricks.com/a-handy-little-system-for-animated-entrances-in-css/
+    Keyframes van de 3 parfums
+
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+    Formulier
+
+            
+Achtergrond informatie 
+    Ik heb gebruik gemaakt van ChatGPT en vervolgens de text anders verwoord.
+    
+
+
+
+ELIE SAAB
+            
+Foto's
+    Al mijn foto's die ik van internet heb, heb ik nog in Adobe Photoshop bewerkt.
+
+    https://perfumesociety.org/wp-content/uploads/2014/04/ELIE_SAAB.jpg
+    Elie Saab eigenaar
+
+    https://fashionista.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTM2MTU2MDg0MzIxNjgzMjY3/elie-saab-thjpg.jpg
+    Elie Saab show
+
+    https://www.phoenixbeauty.co.uk/eliesaab
+    De foto met 3 verschillende Elie Saab parfums
+
+    https://static.wixstatic.com/media/86126b_d985e12896574edbb2399583bdbf8047~mv2.gif/v1/fill/w_1000,h_1000,al_c,q_90/file.jpg
+    Instagram logo (U zult niets zien, omdat het wit van kleur is, dus probeer dan te slepen met uw muis erover heen.)
+
+    De shopping bag icon heb ik in https://www.figma.com/file/nDobBA5w3TtILRciqoRtwD/Hi-fi-wireframes?type=design&node-id=0%3A1&mode=design&t=y2xyIKgtlprF8PiN-1
+    Figma gekozen vanuit de iconify plugin. En daarin staan ook de wireframes die ik eerst had gemaakt voor ik begon met deze website. U kunt toegang vragen om het op Figma te zien.
+
+            
+Code's
+    https://www.w3.org/Style/Examples/007/slideshow.en.html
+    Slideshow
+
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
+        Een nieuwe tab wordt geopend
+    
+            
+Achtergrond informatie 
+    https://nl.wikipedia.org/wiki/Elie_Saab
+    Wikipedia Elie Saab
+
+    https://www.parfumania.nl/Parfum/Elie-Saab/Elie-Saab-Le-Parfum/-c-1024_1064_1409.html
+    Ander informatie bron over Elie Saab
+           
+       
+
+MONTALE
+
+
+Foto's
+    Al mijn foto's die ik van internet heb, heb ik nog in Adobe Photoshop bewerkt.
+
+    https://montaleparfums.com/en/gourmand/293-507-crazy-in-love.html#/257-volume-100_ml
+    Montale crazy in love
+
+    https://montaleparfums.com/en/flowers/240-272-day-dreams.html#/257-volume-100_ml
+    Montale day dreams
+
+    https://montaleparfums.com/en/roses/273-462-diamond-rose.html#/257-volume-100_ml
+    Montale diamond rose
+           
+            
+Code's
+    https://learn.shayhowe.com/advanced-html-css/css-transforms/
+    Zweef animatie van de parfums
+
+            
+Product informatie 
+    https://montaleparfums.com/en/gourmand/293-507-crazy-in-love.html#/257-volume-100_ml
+    Montale crazy in love
+
+    https://montaleparfums.com/en/flowers/240-272-day-dreams.html#/257-volume-100_ml
+    Montale day dreams
+
+    https://montaleparfums.com/en/roses/273-462-diamond-rose.html#/257-volume-100_ml
+    Montale diamond rose
+        
+        
+TRUSSARDI
+            
+Foto's
+    Al mijn foto's die ik van internet heb, heb ik nog in Adobe Photoshop bewerkt.
+
+    https://cdn2.easycosmetic.nl/images/serie/trussardi-1911-donna.png
+    Trussardi parfum fles
+           
+            
+Code's
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside
+    Aside
+           
+            
+Achtergrond informatie
+    https://en.wikipedia.org/wiki/Trussardi
+    Wikipedia Trussardi
+
+    https://www.parfumania.nl/Parfum/Trussardi/Trussardi-Donna/-c-1024_1880_1882.html
+    Ander informatie bron over Trussardi
+
+    https://fashionunited.nl/nieuws/business/trussardi-begint-met-herstructurering/2023030656551
+    Recente nieuws
+
+    https://www.trussardi.com/en/nl/food/restaurant/reserve-your-table
+    Link naar het restaurant
+
+
+
+BRONNEN
+Code
+    https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius
+    Border rond maken
+
+
+LIVE URL:
+https://kmd98x.github.io/MartinaDoekharan_Narcis_Eindopdracht_Internetstandaarden/index.html
+       
