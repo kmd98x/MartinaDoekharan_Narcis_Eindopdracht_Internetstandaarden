@@ -469,30 +469,28 @@ TRUSSARDI PAGINA STYLES
 }
 
 /* 1e section kolommen maken */
-.trussardi main ul {
+.trussardi main > ul {
     list-style: none;
     align-items: center;
     display: flex;
-    gap: 4em;
     margin-top: 5em;
-    
     /* repeat= 1e hoevaak herhalen, 2e is hoeveel kolommen */
     grid-template-columns: repeat(2, 1fr);
 }
 
 /* 1e section alleen de fotos dus werk met nth type */
-.trussardi main li img {
+.trussardi main > li img {
     max-width: 40em;
 }
 
 
-.trussardi main ul li a img {
+.trussardi main >ul li a img {
     width: 1.5em;
     padding-left: 1em;
 }
 
 /* geen echte button, maar wou het een go to actie geven.button bewerkingen van het  koop deze buton */
-.trussardi main ul li a {
+.trussardi main > ul li a {
     animation-delay: 1.5s;
     color: #f5f5db;
     text-decoration: none;
@@ -506,19 +504,44 @@ TRUSSARDI PAGINA STYLES
     margin: auto;
 }
 
-.trussardi main ul li a:hover {
+.trussardi main > ul li a:hover {
     text-shadow: 0em 0em 1em white;
     box-shadow: 0em 0em 1em rgba(255, 217, 0, 0.664);
 }
 
-.trussardi aside {
+/* Mijn aside stijlen */
+.trussardi aside ul{
+    /* width: .1em; */
     display: flex;
-    border: 0.1em solid gold;
-}
-.trussardi aside a{
-    color: #f5f5db;
+    gap: 2em ;
 }
 
+.trussardi aside h3{
+    margin: 0 0 0.5em;
+}
+
+.trussardi aside ul li{
+    text-align: center;
+    padding: 1em;
+    list-style: none;
+    width: 15em;
+    border: solid 0.1em gold;
+}
+
+.trussardi aside ul li:hover{
+    box-shadow: 0em 0em 1em gold;
+}
+
+.trussardi aside a{
+    color: #f5f5db;
+    text-decoration: none;
+    
+}
+
+.trussardi aside a:hover{
+    text-shadow: 0em 0em 1em white;
+
+}
 
 .trussardi footer a {
     animation-delay: 1.5s;
