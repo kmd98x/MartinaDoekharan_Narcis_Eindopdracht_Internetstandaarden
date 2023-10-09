@@ -592,3 +592,7 @@ BRONNEN PAGINA STYLES
 .bronnen main a:hover{
     text-shadow: 0em 0em 1em white;
 }
+
+.bronnen main li em {
+    text-decoration: underline;
+}
