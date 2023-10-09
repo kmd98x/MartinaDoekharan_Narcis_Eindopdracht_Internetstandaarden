@@ -511,8 +511,8 @@ TRUSSARDI PAGINA STYLES
 
 /* Mijn aside stijlen */
 .trussardi aside ul{
-    /* width: .1em; */
     display: flex;
+    justify-content: right;
     gap: 2em ;
 }
 
